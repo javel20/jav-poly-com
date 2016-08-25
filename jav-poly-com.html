@@ -1,0 +1,41 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" type="text/css" href="../iron-icons/hardware-icons.html">
+
+<!--
+`jav-poly-com`
+
+
+@demo demo/index.html 
+-->
+
+<dom-module id="jav-poly-com">
+<link rel="import" type="text/css" href="../iron-icons/hardware-iron-icons.html">
+
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+
+    
+
+    <h2><iron-icon icon="hardware:toys"></iron-icon>[[prop1]]</h2>
+    <center><p>polymer</p></center>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'jav-poly-com',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'NIKE',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
